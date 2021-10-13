@@ -1,9 +1,12 @@
+:root {
+  --blackish: rgb(56, 45, 45);
+}
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
-  background-color: rgb(56, 45, 45);
+  background-color: var(--blackish);
 }
 nav {
   height: 3.5rem;
@@ -13,7 +16,7 @@ nav {
 }
 a {
   text-decoration: none;
-  color: rgb(56, 45, 45);
+  color: var(--blackish);
   margin: 1rem;
   font-size: 20px;
 }
@@ -21,7 +24,9 @@ h1 {
   text-align: center;
 }
 p,
+h4,
 h3,
+h2,
 h1 {
   color: wheat;
 }
@@ -31,7 +36,7 @@ h1 {
   justify-content: center;
 }
 
-article {
+.article {
   height: 300px;
   width: 200px;
   border: wheat solid 2px;
@@ -39,7 +44,7 @@ article {
   padding: 1rem;
   border-radius: 15px;
 }
-img {
+.CardImage {
   height: 150px;
   width: 100px;
   object-fit: cover;
@@ -51,6 +56,22 @@ footer {
   height: 3.5rem;
 }
 span {
-  color: rgb(56, 45, 45);
+  color: var(--blackish);
   margin-top: 1rem;
+}
+
+/* Article */
+
+.articleImage {
+  width: 300px;
+  object-fit: fill;
+  margin: 1rem;
+}
+.articlePage {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.textContainer {
+  margin: 3rem;
+  max-width: 500px;
 }

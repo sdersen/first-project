@@ -10,11 +10,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <nav>
-        <!-- Detta är inte löst du behöver hämta key ur array menu -->
-        <a href="<?= $menu[0]['Menu'];?>"><?= $menu[0][$key];?></a>
-        <a href="">About</a>
-        <a href="">Contact</a>
+        <?php
+        foreach ($menu as $items) :
+            foreach ($items as $key => $value) : ?>
+                <a href="<?= $value; ?>"><?= $key; ?></a>
+        <?php endforeach;
+        endforeach;
+        ?>
     </nav>
-

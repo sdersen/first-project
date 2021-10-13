@@ -11,7 +11,7 @@ $movies =[
 ];
 
 $menu = [
-    ['Menu' => 'url'],
-    ['About' => 'url'],
+    ['Home' => 'www.google.se'],
+    ['About' => 'www.facebook.se'],
     ['Contact' => 'url'],
 ];
