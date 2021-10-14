@@ -3,21 +3,25 @@
     <h1>Star Wars</h1>
     <div class="container">
 
-        <!-- endast för skiss, artiklarna ska sedan loopas fram från en array. Här kan jag göra en funtion som kortar en text kanske? -->
-
-        <article class="article">
-            <img class="cardImage" src="https://m.media-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_FMjpg_UX1000_.jpg" alt="">
-            <h3>Film 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </article>
-
-        <!-- <article class="article"></article>
-        <article class="article"></article>
-        <article class="article"></article>
-        <article class="article"></article> -->
+        <?php
+        foreach ($movies as $movie) { ?>
+            <article class="article">
+                <img class="cardImage" src=<?= $movie['image']; ?> alt="<?= $movie['title']; ?>" />
+                <h3><?= $movie['titel']; ?></h3>
+                <p><?= $movie['descriptionShort']; ?></p>
+            </article>
+        <?php } ?>
 
     </div>
 
+    <div class="randomContainer">
+        <h5>Wich Star Wars character are you?</h5>
+        <button onclick="getRandomCharacter()">Find your character</button>
+        <div>
+            <h3>You are....</h3>
+        </div>
+        <p id="character"></p>
+    </div>
 </main>
 
-<?php require __DIR__ . '/footer.php';?>
+<?php require __DIR__ . '/footer.php'; ?>

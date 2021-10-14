@@ -1,5 +1,5 @@
 <footer>
-    <span>Sofia Dersén </span><span><?= date('Y'); ?></span>
+    <span>Sofia Dersén</span><span><?= date('Y'); ?></span>
 </footer>
 
 </body>

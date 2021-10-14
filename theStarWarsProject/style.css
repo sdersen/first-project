@@ -1,12 +1,17 @@
 :root {
-  --blackish: rgb(56, 45, 45);
+  --blackish: rgb(27, 20, 20);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   background-color: var(--blackish);
+  font-family: 'IBM Plex Serif', serif;
 }
 nav {
   height: 3.5rem;
@@ -24,27 +29,37 @@ h1 {
   text-align: center;
 }
 p,
+h5,
 h4,
 h3,
 h2,
 h1 {
   color: wheat;
 }
+h1 {
+  font-weight: 300;
+}
+h3 {
+  font-weight: bolder;
+}
+
+p {
+  font-weight: 14px;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .article {
-  height: 300px;
+  /* height: 400px; */
   width: 200px;
   border: wheat solid 2px;
   margin: 20px;
   padding: 1rem;
   border-radius: 15px;
 }
-.CardImage {
+.cardImage {
   height: 150px;
   width: 100px;
   object-fit: cover;
@@ -69,9 +84,23 @@ span {
 }
 .articlePage {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 .textContainer {
   margin: 3rem;
   max-width: 500px;
+}
+
+.randomContainer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+button {
+  height: 50px;
+  width: 200px;
+  border: wheat solid 2px;
+  border-radius: 15px;
+  background-color: transparent;
+  color: wheat;
+  font-size: 20px;
 }
