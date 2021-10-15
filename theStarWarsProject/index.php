@@ -5,12 +5,13 @@
 
         <?php
         foreach ($movies as $movie) : ?>
-            <article class="article">
-                <img class="cardImage" src=<?= $movie['image']; ?> alt="<?= $movie['title']; ?>" />
-                <h3><?= $movie['titel']; ?> ( <?= $movie['year']; ?> )</h3>
-                <p><?= $movie['descriptionShort']; ?></p>
-                <button class="readMoreButton">Read more</button>
-            </article>
+            <a href="/article.php?id=<?=$movie['id']?>">
+                <article class="article">
+                    <img class="cardImage" src=<?= $movie['image']; ?> alt="<?= $movie['title']; ?>" />
+                    <h3><?= $movie['titel']; ?> ( <?= $movie['year']; ?> )</h3>
+                    <p><?= $movie['descriptionShort']; ?></p>
+                </article>
+            </a>
         <?php endforeach; ?>
     </div>
 </main>
