@@ -1,11 +1,11 @@
 {
   "folders": [
-	{
-		"path": "../../../realFakeNews"
-	},
-	{
-		"path": "."
-	}
-],
+    {
+      "path": "../../../realFakeNews"
+    },
+    {
+      "path": "."
+    }
+  ],
   "settings": {}
 }

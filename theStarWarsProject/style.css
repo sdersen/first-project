@@ -1,5 +1,6 @@
 :root {
-  --blackish: rgb(27, 20, 20);
+  --blackish: #1B1919;
+  --whiteish: rgb(247, 238, 222);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500;600;700&display=swap');
@@ -17,7 +18,7 @@ nav {
   height: 3.5rem;
   display: flex;
   justify-content: center;
-  background-color: wheat;
+  background-color: var(--whiteish);
 }
 a {
   text-decoration: none;
@@ -34,10 +35,14 @@ h4,
 h3,
 h2,
 h1 {
-  color: wheat;
+  color: var(--whiteish);
 }
 h1 {
   font-weight: 300;
+}
+h2{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 h3 {
   font-weight: bolder;
@@ -53,11 +58,15 @@ p {
 }
 .article {
   /* height: 400px; */
-  width: 200px;
-  border: wheat solid 2px;
+  width: 300px;
+  border: var(--whiteish) solid 2px;
   margin: 20px;
   padding: 1rem;
   border-radius: 15px;
+}
+.readMoreButton {
+  width: 150px;
+  border: var(--whiteish) solid 1px;
 }
 .cardImage {
   height: 150px;
@@ -67,7 +76,7 @@ p {
 footer {
   display: flex;
   justify-content: center;
-  background-color: wheat;
+  background-color: var(--whiteish);
   height: 3.5rem;
 }
 span {
@@ -98,9 +107,27 @@ span {
 button {
   height: 50px;
   width: 200px;
-  border: wheat solid 2px;
+  border: var(--whiteish) solid 2px;
   border-radius: 15px;
   background-color: transparent;
-  color: wheat;
+  color: var(--whiteish);
+  font-size: 20px;
+}
+/* About */
+
+.aboutContainer{
+  display: flex;
+  justify-content: center;
+}
+.someImage{
+  height: 100px;
+}
+
+/* Who are you */
+.characterButton:hover{
+color: var(--blackish);
+background-color: var(--whiteish);
+}
+#character{
   font-size: 20px;
 }

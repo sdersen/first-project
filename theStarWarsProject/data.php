@@ -47,26 +47,26 @@ $movies =[
 ];
 
 $menu = [
-    ['Home' => 'www.google.se'],
-    ['About' => 'www.facebook.se'],
-    ['Contact' => 'url'],
+    ['Home' => '/index.php'],
+    ['About' => '/about.php'],
+    ['Who are you?' => '/whoAreYou.php'],
 ];
 
 $characters = [
     [
-        'name' => 'Han Solo',
+        'name' => 'Han Solo:',
         'message' => 'OG hero!'
     ],
     [
-        'name' => 'Jabba da Hut',
+        'name' => 'Jabba da Hut:',
         'message' => 'I get it. It\'s not what you hoped for'
     ],
     [
-        'name' => 'Jyn Erso',
+        'name' => 'Jyn Erso:',
         'message' => 'Next gen hero! May the force be with you.'
     ],
     [
-        'name' => 'C3PO',
+        'name' => 'C3PO:',
         'message' => 'Someting fun.'
     ],
 ];
