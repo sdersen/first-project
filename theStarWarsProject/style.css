@@ -1,5 +1,5 @@
 :root {
-  --blackish: #1B1919;
+  --blackish: #1b1919;
   --whiteish: rgb(247, 238, 222);
 }
 
@@ -8,12 +8,12 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   background-color: var(--blackish);
   font-family: 'IBM Plex Serif', serif;
 }
+/* Navbar */
 nav {
   height: 3.5rem;
   display: flex;
@@ -26,9 +26,7 @@ a {
   margin: 1rem;
   font-size: 20px;
 }
-h1 {
-  text-align: center;
-}
+/* Greneral text */
 p,
 h5,
 h4,
@@ -38,32 +36,39 @@ h1 {
   color: var(--whiteish);
 }
 h1 {
-  font-weight: 300;
+  font-size: 3rem;
+  font-weight: lighter;
+  letter-spacing: -1px;
+  text-align: center;
 }
-h2{
+h2 {
   margin-left: 1rem;
   margin-right: 1rem;
   text-align: center;
+  font-size: 2rem;
+  font-weight: lighter;
+  letter-spacing: -1px;
 }
 h3 {
   font-weight: bolder;
 }
-
 p {
   font-weight: 14px;
 }
+/* Game section */
 .gameContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.question{
+.question {
   margin: 15px;
 }
-.questionText{
+.questionText {
   font-size: 20px;
+  text-align: center;
 }
-.ArtistButton{
+.ArtistButton {
   height: 30px;
   width: 100px;
   border: var(--whiteish) solid 2px;
@@ -72,28 +77,38 @@ p {
   color: var(--whiteish);
   font-size: 12px;
 }
+.ArtistButton:hover {
+  color: var(--blackish);
+  background-color: var(--whiteish);
+}
+.gameText {
+  margin: 20px;
+  text-align: center;
+}
+/* Movie articles */
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .article {
-  /* height: 400px; */
   width: 300px;
+  height: 480px;
   border: var(--whiteish) solid 2px;
-  margin: 20px;
+  margin: 0.5rem;
   padding: 1rem;
   border-radius: 15px;
 }
-.readMoreButton {
-  width: 150px;
-  border: var(--whiteish) solid 1px;
+.article:hover {
+  border: var(--whiteish) solid 4px;
 }
 .cardImage {
   height: 150px;
   width: 100px;
   object-fit: cover;
 }
+
+/* Footer */
 footer {
   display: flex;
   justify-content: center;
@@ -105,8 +120,7 @@ span {
   margin-top: 1rem;
 }
 
-/* Article */
-
+/* Article page */
 .articleImage {
   width: 300px;
   object-fit: fill;
@@ -120,7 +134,7 @@ span {
   margin: 3rem;
   max-width: 500px;
 }
-
+/* Random page */
 .randomContainer {
   text-align: center;
   margin-bottom: 2rem;
@@ -134,21 +148,21 @@ button {
   color: var(--whiteish);
   font-size: 20px;
 }
-/* About */
 
-.aboutContainer{
+/* About */
+.aboutContainer {
   display: flex;
   justify-content: center;
 }
-.someImage{
+.someImage {
   height: 100px;
 }
 
 /* Who are you */
-.characterButton:hover{
-color: var(--blackish);
-background-color: var(--whiteish);
+.characterButton:hover {
+  color: var(--blackish);
+  background-color: var(--whiteish);
 }
-#character{
+#character {
   font-size: 20px;
 }

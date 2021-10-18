@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-// require __DIR__ . '/functions.php';
 
 $movies =[
     [
@@ -76,7 +75,15 @@ $characters = [
     ],
     [
         'name' => 'C3PO:',
-        'message' => 'Someting fun.'
+        'message' => 'Wow! Act smart.'
+    ],
+    [
+        'name' => 'Jar Jar Binks:',
+        'message' => 'Get your weird walking on.'
+    ],
+    [
+        'name' => 'Darth Wader:',
+        'message' => 'Luke.... (you know how it goes).'
     ],
 ];
 
@@ -99,13 +106,9 @@ $charactersOrArtists = [
         'id' => 2
     ],
     [
-        'name' => 'Sio Bibble',
+        'name' => 'Ello Asty',
         'type' => 'character',
         'id' => 3
     ],
 
 ];
-
-echo $charactersOrArtists[1]['name'];
-
-// $artistAnswer = isArtist($charactersOrArtists);
