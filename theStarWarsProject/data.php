@@ -86,3 +86,26 @@ $character = $characters[array_rand($characters)];
 
 $message = $character['message'];
 $costumeCharacter = $character['name'];
+
+$charactersOrArtists = [
+    [
+        'name' => 'Dud Bolt',
+        'type' => 'character',
+        'id' => 1
+    ],
+    [
+        'name' => 'Vic Mensa',
+        'type' => 'artist',
+        'id' => 2
+    ],
+    [
+        'name' => 'Sio Bibble',
+        'type' => 'character',
+        'id' => 3
+    ],
+
+];
+
+echo $charactersOrArtists[1]['name'];
+
+// $artistAnswer = isArtist($charactersOrArtists);

@@ -1,4 +1,12 @@
-<?php require __DIR__ . '/data.php'; ?>
+<?php require __DIR__ . '/data.php'; 
+require __DIR__ . '/functions.php'; 
+
+$answerArtist0 = isArtist0($charactersOrArtists);
+$answerCharacter0 = isCharacter0($charactersOrArtists);
+$answerArtist1 = isArtist1($charactersOrArtists);
+$answerCharacter1 = isCharacter1($charactersOrArtists);
+$answerArtist2 = isArtist2($charactersOrArtists);
+$answerCharacter2 = isCharacter2($charactersOrArtists);?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +20,24 @@
     <script>
         function getRandomCharacter() {
             document.getElementById("character").innerHTML = "<?= $costumeCharacter ?> <br> <?= $message ?>";
+        }
+        function checkCharacter0() {
+            document.getElementById("ArtistCharacter0").innerHTML = "<?= $answerCharacter0?>";
+        }
+        function checkArtist0() {
+            document.getElementById("ArtistCharacter0").innerHTML = "<?= $answerArtist0?>";
+        }
+        function checkCharacter1() {
+            document.getElementById("ArtistCharacter1").innerHTML = "<?= $answerCharacter1?>";
+        }
+        function checkArtist1() {
+            document.getElementById("ArtistCharacter1").innerHTML = "<?= $answerArtist1?>";
+        }
+        function checkCharacter2() {
+            document.getElementById("ArtistCharacter2").innerHTML = "<?= $answerCharacter2?>";
+        }
+        function checkArtist2() {
+            document.getElementById("ArtistCharacter2").innerHTML = "<?= $answerArtist2?>";
         }
     </script>
     <title>My star Wars project</title>
