@@ -1,8 +1,9 @@
-INSERT MANDATORY GIF
+<img src="https://media0.giphy.com/media/P1trdeqfQODW8/giphy.gif?cid=ecf05e47d80q9vfxffyrg3cgftdjwd1e2yyoo0flg7ni6uc5&rid=giphy.gif&ct=g" width="100%">
 
-# Project Title
 
-Text about the project and why it exists. This would also be a great place to link the project on One.com.
+# My Starry Wars
+
+This is a fun page about some Star Wars films. It also includes a game and a function that will give you info on who you can dress up as on your nrex Star Wars costume party. You can view the page at sofiadersen.com/starwars
 
 # Installation
 
