@@ -8,7 +8,7 @@ require __DIR__ . '/data.php';
     <h2>Who will you be at the next Star Wars costume party?</h2>
     <button class="characterButton" onclick="getRandomCharacter()">Find your character</button>
     <div>
-        <h3>You are....</h3>
+        <h3>You will be....</h3>
     </div>
     <p id="character"></p>
 </div>

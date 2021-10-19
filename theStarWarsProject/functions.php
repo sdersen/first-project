@@ -14,7 +14,7 @@ function getMovie(array $movies, int $id): array
 
 // Functions for the game
 
-function isArtist0($charactersOrArtists)
+function isArtist0(array $charactersOrArtists): string
 {
     if ($charactersOrArtists[0]['type'] === 'artist') {
         return 'yay';
@@ -23,14 +23,14 @@ function isArtist0($charactersOrArtists)
     };
 };
 
-function isCharacter0($charactersOrArtists)
+function isCharacter0(array $charactersOrArtists): string
 {
     if ($charactersOrArtists[0]['type'] === 'character') {
         return 'Yes, a Vulptereen male hitman from the planet Vulpter ';
     };
 };
 
-function isArtist1($charactersOrArtists)
+function isArtist1(array $charactersOrArtists): string
 {
 
     if ($charactersOrArtists[1]['type'] === 'artist') {
@@ -38,7 +38,7 @@ function isArtist1($charactersOrArtists)
     };
 };
 
-function isCharacter1($charactersOrArtists)
+function isCharacter1(array $charactersOrArtists): string
 {
     if ($charactersOrArtists[1]['type'] === 'character') {
         return 'Yes';
@@ -46,7 +46,7 @@ function isCharacter1($charactersOrArtists)
         return 'Nope';
     };
 };
-function isArtist2($charactersOrArtists)
+function isArtist2(array $charactersOrArtists):string
 {
 
     if ($charactersOrArtists[2]['type'] === 'artist') {
@@ -56,7 +56,7 @@ function isArtist2($charactersOrArtists)
     };
 };
 
-function isCharacter2($charactersOrArtists)
+function isCharacter2(array $charactersOrArtists):string
 {
     if ($charactersOrArtists[2]['type'] === 'character') {
         return 'Yes, he was a talented but reckless Abendedo pilot';

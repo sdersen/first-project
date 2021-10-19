@@ -17,6 +17,9 @@ $answerCharacter2 = isCharacter2($charactersOrArtists);?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/1539/premium/1539194.png?token=exp=1634284493~hmac=52410dcbe7ecf411879a3f20cbdb5a5a" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;400;500;600&display=swap" rel="stylesheet">
     <script>
         function getRandomCharacter() {
             document.getElementById("character").innerHTML = "<?= $costumeCharacter ?> <br> <?= $message ?>";
@@ -40,7 +43,7 @@ $answerCharacter2 = isCharacter2($charactersOrArtists);?>
             document.getElementById("ArtistCharacter2").innerHTML = "<?= $answerArtist2?>";
         }
     </script>
-    <title>My star Wars project</title>
+    <title>The Starry Wars</title>
 </head>
 
 <body>
@@ -48,7 +51,7 @@ $answerCharacter2 = isCharacter2($charactersOrArtists);?>
         <?php
         foreach ($menu as $items) :
             foreach ($items as $key => $value) : ?>
-                <a href="<?= $value; ?>"><?= $key; ?></a>
+                <a class="navLink" href="<?= $value; ?>"><?= $key; ?></a>
         <?php endforeach;
         endforeach;
         ?>

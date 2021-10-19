@@ -3,16 +3,18 @@
   --whiteish: rgb(247, 238, 222);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500;600;700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200;400;500;600&display=swap'); */
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
   background-color: var(--blackish);
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Bitter', serif;
 }
+
 /* Navbar */
 nav {
   height: 3.5rem;
@@ -20,11 +22,11 @@ nav {
   justify-content: center;
   background-color: var(--whiteish);
 }
-a {
+.navLink {
   text-decoration: none;
   color: var(--blackish);
   margin: 1rem;
-  font-size: 20px;
+  font-size: 1rem;
 }
 /* Greneral text */
 p,
@@ -35,47 +37,57 @@ h2,
 h1 {
   color: var(--whiteish);
 }
+h1,
+h2 {
+  text-align: center;
+  /* font-weight: lighter;   */
+  letter-spacing: -1px;
+}
 h1 {
   font-size: 3rem;
-  font-weight: lighter;
-  letter-spacing: -1px;
-  text-align: center;
 }
 h2 {
   margin-left: 1rem;
   margin-right: 1rem;
-  text-align: center;
   font-size: 2rem;
-  font-weight: lighter;
-  letter-spacing: -1px;
+  font-weight: normal;
 }
 h3 {
   font-weight: bolder;
 }
 p {
-  font-weight: 14px;
+  font-weight: 1rem;
 }
 /* Game section */
+
+.gameTextContainer {
+  display: flex;
+  display: block;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 .gameContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.question {
+.questionContainer {
   margin: 15px;
 }
 .questionText {
   font-size: 20px;
   text-align: center;
+  font-weight: bold;
 }
 .ArtistButton {
-  height: 30px;
-  width: 100px;
+  height: 40px;
+  width: 120px;
   border: var(--whiteish) solid 2px;
   border-radius: 15px;
   background-color: transparent;
   color: var(--whiteish);
-  font-size: 12px;
+  font-size: 1.25rem;
 }
 .ArtistButton:hover {
   color: var(--blackish);
@@ -84,7 +96,10 @@ p {
 .gameText {
   margin: 20px;
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: lighter;
 }
+
 /* Movie articles */
 .container {
   display: flex;
@@ -93,7 +108,7 @@ p {
 }
 .article {
   width: 300px;
-  height: 480px;
+  min-height: 540px;
   border: var(--whiteish) solid 2px;
   margin: 0.5rem;
   padding: 1rem;
@@ -107,7 +122,11 @@ p {
   width: 100px;
   object-fit: cover;
 }
-
+.cardDescription {
+  width: 260px;
+  font-weight: lighter;
+  font-size: 1.3rem;
+}
 /* Footer */
 footer {
   display: flex;
@@ -117,7 +136,7 @@ footer {
 }
 span {
   color: var(--blackish);
-  margin-top: 1rem;
+  margin: 1rem 0.25rem 1rem 0.25rem;
 }
 
 /* Article page */
@@ -150,19 +169,40 @@ button {
 }
 
 /* About */
+
 .aboutContainer {
   display: flex;
   justify-content: center;
+  height: calc(100vh - 127px);
+  margin-top: 1rem;
 }
 .someImage {
   height: 100px;
+  margin: 0.5rem;
 }
-
 /* Who are you */
+.randomContainer {
+  height: calc(100vh - 170px);
+}
 .characterButton:hover {
   color: var(--blackish);
   background-color: var(--whiteish);
 }
 #character {
   font-size: 20px;
+}
+
+@media screen and (min-width: 770px) {
+  .ArtistButton {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .aboutContainer {
+    display: grid;
+    height: calc(100vh - 160px);
+    margin-top: 1rem;
+  }
 }

@@ -16,7 +16,7 @@ $movies =[
         'titel' => 'Star Wars',
         'year' => 1977,
         'image' => 'https://cached-images.bonnier.news/swift/bilder/epi-30-dn/UploadedImages/2015/12/3/6a187580-f179-4dec-9e17-3d003bf9aafd/bigOriginal.jpg?interpolation=lanczos-none&downsize=480:*&output-quality=80&output-format=auto',
-        'descriptionShort' => 'Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire\'s world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.',
+        'descriptionShort' => 'Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire\'s battle station, while also attempting to rescue Princess Leia from Darth Vader.',
         'descriptionLong' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus quam non nisl aliquet dapibus. Mauris consequat vitae urna non tincidunt. Proin ultricies ante justo, et placerat purus gravida sit amet. Nunc cursus ipsum ipsum, id suscipit nulla mattis at. Fusce a dapibus nisi. Proin tempor, mi ut viverra lobortis, nulla turpis feugiat libero, vitae dignissim leo dolor ut justo. Nulla ultricies massa non nulla ultricies efficitur. Duis feugiat dapibus magna a aliquet. Sed neque augue, dictum sit amet magna id, consequat bibendum odio.'
     ],
     [
@@ -49,7 +49,7 @@ $movies =[
         'titel' => 'The Empire Strikes Back',
         'year' => 1980,
         'image' => 'https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg',
-        'descriptionShort' => 'After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued across the galaxy by Darth Vader and bounty hunter Boba Fett.',
+        'descriptionShort' => 'After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued across the galaxy by Darth Vader.',
         'descriptionLong' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus quam non nisl aliquet dapibus. Mauris consequat vitae urna non tincidunt. Proin ultricies ante justo, et placerat purus gravida sit amet. Nunc cursus ipsum ipsum, id suscipit nulla mattis at. Fusce a dapibus nisi. Proin tempor, mi ut viverra lobortis, nulla turpis feugiat libero, vitae dignissim leo dolor ut justo. Nulla ultricies massa non nulla ultricies efficitur. Duis feugiat dapibus magna a aliquet. Sed neque augue, dictum sit amet magna id, consequat bibendum odio.'
     ],
 ];
@@ -110,5 +110,4 @@ $charactersOrArtists = [
         'type' => 'character',
         'id' => 3
     ],
-
 ];
