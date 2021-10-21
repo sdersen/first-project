@@ -2,10 +2,6 @@
   --blackish: #1b1919;
   --whiteish: rgb(247, 238, 222);
 }
-
-/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200;400;500;600&display=swap'); */
 * {
   box-sizing: border-box;
 }
@@ -26,7 +22,8 @@ nav {
   text-decoration: none;
   color: var(--blackish);
   margin: 1rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 /* Greneral text */
 p,
@@ -101,6 +98,15 @@ p {
 }
 
 /* Movie articles */
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+}
+.sortButton {
+  color: var(--blackish);
+  background-color: var(--whiteish);
+  margin-bottom: 20px;
+}
 .container {
   display: flex;
   flex-wrap: wrap;

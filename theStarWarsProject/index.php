@@ -1,9 +1,15 @@
-<?php require __DIR__ . '/header.php'; ?>
+<?php require __DIR__ . '/header.php';
+if ($_GET['id'] == 1) {
+    $keys = array_column($movies, 'year');
+    array_multisort($keys, SORT_ASC, $movies);
+};
+?>
+
 <main>
     <h1>Star Wars</h1>
     <div class="gameTextContainer">
-    <h2>Game</h2>
-    <p class="gameText">What dose Star Wars and rap artists have in common? Weird names! Can you guess if the names bellow is a character in Star Wars or a rap artist? </p>
+        <h2>Game</h2>
+        <p class="gameText">What dose Star Wars and rap artists have in common? Weird names! Can you guess if the names bellow is a character in Star Wars or a rap artist? </p>
     </div>
     <div class="gameContainer">
 
@@ -27,9 +33,14 @@
             <button class="ArtistButton" onclick="checkCharacter2()">Character</button>
             <p id="ArtistCharacter2"></p>
         </article>
-
     </div>
+
     <h2>Movie Info</h2>
+    <div class="buttonContainer">
+        <a href="/index.php?id=<?= 1 ?>">
+            <button class="sortButton">Sort by year</button>
+        </a>
+    </div>
     <div class="container">
 
         <?php

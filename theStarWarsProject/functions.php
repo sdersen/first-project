@@ -62,16 +62,3 @@ function isCharacter2(array $charactersOrArtists):string
         return 'Yes, he was a talented but reckless Abendedo pilot';
     };
 };
-
-
-// Skiss på funktion för random
-
-// function getRandomCharacter(array $characters) : string {
-
-//     $character = $characters[array_rand($characters)];
-
-//     $message = $character['message'];
-//     $costumeCharacter = $character['name'];
-
-//     return $character['name'];
-// };
