@@ -57,7 +57,7 @@ $movies =[
 $menu = [
     ['Home' => '/index.php'],
     ['About' => '/about.php'],
-    ['Who are you?' => '/whoAreYou.php'],
+    ['Get character' => '/whoAreYou.php'],
 ];
 
 $characters = [

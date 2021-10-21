@@ -1,7 +1,21 @@
 :root {
-  --blackish: #1b1919;
+  --blackish: #010101;
   --whiteish: rgb(247, 238, 222);
 }
+/* @keyframes move {
+  0% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+  40% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateY(-400px);
+    opacity: 0%;
+  } */
+/* } */
 * {
   box-sizing: border-box;
 }
@@ -9,6 +23,21 @@ body {
   margin: 0;
   background-color: var(--blackish);
   font-family: 'Bitter', serif;
+}
+.heroImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.darthIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+svg {
+  fill:var(--whiteish);
+  height: 100px;
 }
 
 /* Navbar */
@@ -36,16 +65,16 @@ h1 {
 }
 h1,
 h2 {
-  text-align: center;
-  /* font-weight: lighter;   */
   letter-spacing: -1px;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 3rem;  
+  text-align: center;
+
 }
 h2 {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  /* margin-left: 1rem;
+  margin-right: 1rem; */
   font-size: 2rem;
   font-weight: normal;
 }
@@ -98,14 +127,21 @@ p {
 }
 
 /* Movie articles */
-.buttonContainer{
+.buttonContainer {
   display: flex;
   justify-content: center;
+}
+.movieInfo{
+  text-align: center;
 }
 .sortButton {
   color: var(--blackish);
   background-color: var(--whiteish);
   margin-bottom: 20px;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  font-size: 15px;
 }
 .container {
   display: flex;
@@ -139,6 +175,9 @@ footer {
   justify-content: center;
   background-color: var(--whiteish);
   height: 3.5rem;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 }
 span {
   color: var(--blackish);
@@ -198,11 +237,25 @@ button {
   font-size: 20px;
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 750px) {
   .ArtistButton {
     height: 50px;
     width: 150px;
     font-size: 20px;
+  }
+  .sortButton {
+    color: var(--blackish);
+    background-color: var(--whiteish);
+    margin-bottom: 20px;
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+  .navLink {
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 }
 @media screen and (max-width: 340px) {
