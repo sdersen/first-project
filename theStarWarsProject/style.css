@@ -2,20 +2,6 @@
   --blackish: #010101;
   --whiteish: rgb(247, 238, 222);
 }
-/* @keyframes move {
-  0% {
-    transform: translateY(0px);
-    opacity: 100%;
-  }
-  40% {
-    transform: translateY(0px);
-    opacity: 100%;
-  }
-  100% {
-    transform: translateY(-400px);
-    opacity: 0%;
-  } */
-/* } */
 * {
   box-sizing: border-box;
 }
@@ -24,11 +10,7 @@ body {
   background-color: var(--blackish);
   font-family: 'Bitter', serif;
 }
-.heroImage {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
+/* Darth icon */
 .darthIcon {
   display: flex;
   justify-content: center;
@@ -36,7 +18,7 @@ body {
   margin-top: 20px;
 }
 svg {
-  fill:var(--whiteish);
+  fill: var(--whiteish);
   height: 100px;
 }
 
@@ -46,6 +28,7 @@ nav {
   display: flex;
   justify-content: center;
   background-color: var(--whiteish);
+  margin-bottom: 1rem;
 }
 .navLink {
   text-decoration: none;
@@ -54,6 +37,7 @@ nav {
   font-size: 1.1rem;
   font-weight: bold;
 }
+
 /* Greneral text */
 p,
 h5,
@@ -68,13 +52,10 @@ h2 {
   letter-spacing: -1px;
 }
 h1 {
-  font-size: 3rem;  
+  font-size: 3rem;
   text-align: center;
-
 }
 h2 {
-  /* margin-left: 1rem;
-  margin-right: 1rem; */
   font-size: 2rem;
   font-weight: normal;
 }
@@ -84,8 +65,8 @@ h3 {
 p {
   font-weight: 1rem;
 }
-/* Game section */
 
+/* Game section */
 .gameTextContainer {
   display: flex;
   display: block;
@@ -127,12 +108,17 @@ p {
 }
 
 /* Movie articles */
+.movieInfo {
+  text-align: center;
+}
 .buttonContainer {
   display: flex;
   justify-content: center;
 }
-.movieInfo{
-  text-align: center;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .sortButton {
   color: var(--blackish);
@@ -143,12 +129,7 @@ p {
   border-radius: 10px;
   font-size: 15px;
 }
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.article {
+.card {
   width: 300px;
   min-height: 540px;
   border: var(--whiteish) solid 2px;
@@ -169,6 +150,54 @@ p {
   font-weight: lighter;
   font-size: 1.3rem;
 }
+
+/* Article page */
+.articlePage {
+  display: flex;
+  flex-wrap: wrap;
+}
+.articleImage {
+  width: 300px;
+  object-fit: contain;
+  margin: 1rem;
+}
+.textContainer {
+  margin: 3rem;
+  max-width: 350px;
+}
+
+/* Get character */
+.randomContainer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+button {
+  height: 50px;
+  width: 200px;
+  border: var(--whiteish) solid 2px;
+  border-radius: 15px;
+  background-color: transparent;
+  color: var(--whiteish);
+  font-size: 20px;
+}
+.characterButton:hover {
+  color: var(--blackish);
+  background-color: var(--whiteish);
+}
+#character {
+  font-size: 20px;
+}
+/* About */
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.someImage {
+  height: 100px;
+  margin: 0.5rem;
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -183,60 +212,6 @@ span {
   color: var(--blackish);
   margin: 1rem 0.25rem 1rem 0.25rem;
 }
-
-/* Article page */
-.articleImage {
-  width: 300px;
-  object-fit: fill;
-  margin: 1rem;
-}
-.articlePage {
-  display: flex;
-  flex-wrap: wrap;
-}
-.textContainer {
-  margin: 3rem;
-  max-width: 500px;
-}
-/* Random page */
-.randomContainer {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-button {
-  height: 50px;
-  width: 200px;
-  border: var(--whiteish) solid 2px;
-  border-radius: 15px;
-  background-color: transparent;
-  color: var(--whiteish);
-  font-size: 20px;
-}
-
-/* About */
-
-.aboutContainer {
-  display: flex;
-  justify-content: center;
-  height: calc(100vh - 127px);
-  margin-top: 1rem;
-}
-.someImage {
-  height: 100px;
-  margin: 0.5rem;
-}
-/* Who are you */
-.randomContainer {
-  height: calc(100vh - 170px);
-}
-.characterButton:hover {
-  color: var(--blackish);
-  background-color: var(--whiteish);
-}
-#character {
-  font-size: 20px;
-}
-
 @media screen and (min-width: 750px) {
   .ArtistButton {
     height: 50px;
@@ -258,10 +233,16 @@ button {
     font-weight: bold;
   }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 410px) {
   .aboutContainer {
     display: grid;
-    height: calc(100vh - 160px);
     margin-top: 1rem;
+  }
+  h2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .articleImage {
+    margin: auto;
   }
 }

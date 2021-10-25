@@ -1,5 +1,4 @@
 <?php
-
 require __DIR__ . '/header.php';
 require __DIR__ . '/data.php';
 
@@ -16,7 +15,5 @@ $id = $_GET['id'];?>
             <p><?=$movie['descriptionLong']?></p>
         </div>
     </article>
-
 </main>
-
 <?php require __DIR__ . '/footer.php'; ?>

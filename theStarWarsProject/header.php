@@ -1,12 +1,14 @@
 <?php require __DIR__ . '/data.php'; 
-require __DIR__ . '/functions.php'; 
-
+require __DIR__ . '/functions.php';
+ 
+//Variabels for game
 $answerArtist0 = isArtist0($charactersOrArtists);
 $answerCharacter0 = isCharacter0($charactersOrArtists);
 $answerArtist1 = isArtist1($charactersOrArtists);
 $answerCharacter1 = isCharacter1($charactersOrArtists);
 $answerArtist2 = isArtist2($charactersOrArtists);
-$answerCharacter2 = isCharacter2($charactersOrArtists);?>
+$answerCharacter2 = isCharacter2($charactersOrArtists);
+?>
 
 <!DOCTYPE html>
 <html lang="en">

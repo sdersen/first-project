@@ -1,10 +1,9 @@
 <?php
-
 declare(strict_types=1);
 
+// Function for article.php
 function getMovie(array $movies, int $id): array
 {
-
     foreach ($movies as $movie) {
         if ($movie['id'] === $id) {
             return $movie;

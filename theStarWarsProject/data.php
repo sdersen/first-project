@@ -57,7 +57,7 @@ $movies =[
 $menu = [
     ['Home' => '/index.php'],
     ['About' => '/about.php'],
-    ['Get character' => '/whoAreYou.php'],
+    ['Get character' => '/getCharacter.php'],
 ];
 
 $characters = [
@@ -67,7 +67,7 @@ $characters = [
     ],
     [
         'name' => 'Jabba da Hut:',
-        'message' => 'I get it. It\'s not what you hoped for'
+        'message' => 'I get it. It\'s not what you hoped for.'
     ],
     [
         'name' => 'Jyn Erso:',
@@ -86,8 +86,6 @@ $characters = [
         'message' => 'Luke.... (you know how it goes).'
     ],
 ];
-
-// Kan ska denna vara här eller på ngt sätt som funktion
 
 $character = $characters[array_rand($characters)];
 
