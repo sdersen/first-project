@@ -64,9 +64,6 @@ h2 {
 h3 {
   font-weight: bolder;
 }
-p {
-  font-weight: 1rem;
-}
 
 /* Game section */
 .gameTextContainer {
@@ -250,5 +247,8 @@ span {
   }
   .sortButton {
     font-size: 0.7rem;
+  }
+  .characterButton {
+    font-size: 1rem;
   }
 }
