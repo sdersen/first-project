@@ -3,11 +3,11 @@
 
 # My Starry Wars
 
-This is a fun page about some Star Wars films. It also includes a game and a function that will give you info on who you can dress up as on your nrex Star Wars costume party. You can view the page at sofiadersen.com/starwars
+A page about some Star Wars films. It also includes a game and a function that will give you info on who you can dress up as on your next Star Wars costume party. You can view the page at [sofiadersen.com](sofiadersen.com/starrywars)
 
 # Installation
 
-Add the installation instructions.
+Clone this repo and run a localhost.
 
 # Code Review
 
