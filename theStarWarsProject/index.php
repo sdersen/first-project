@@ -36,14 +36,14 @@ if ($_GET['id'] == 1) {
     </div>
     <h2 class="movieInfo">Movie Info</h2>
     <div class="buttonContainer">
-        <a href="/index.php?id=<?= 1 ?>">
+        <a href="/starrywars/index.php?id=<?= 1 ?>">
             <button class="sortButton">Sort by year</button>
         </a>
     </div>
     <div class="container">
         <?php
         foreach ($movies as $movie) : ?>
-            <a href="/article.php?id=<?= $movie['id'] ?>">
+            <a href="/starrywars/article.php?id=<?= $movie['id'] ?>">
                 <article class="card">
                     <img class="cardImage" src=<?= $movie['image']; ?> alt="<?= $movie['title']; ?>" />
                     <h3><?= $movie['title']; ?> ( <?= $movie['year']; ?> )</h3>
