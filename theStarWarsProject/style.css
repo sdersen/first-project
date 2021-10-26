@@ -10,6 +10,9 @@ body {
   background-color: var(--blackish);
   font-family: 'Bitter', serif;
 }
+a {
+  text-decoration: none;
+}
 /* Darth icon */
 .darthIcon {
   display: flex;
@@ -31,7 +34,6 @@ nav {
   margin-bottom: 1rem;
 }
 .navLink {
-  text-decoration: none;
   color: var(--blackish);
   margin: 1rem;
   font-size: 1.1rem;
@@ -245,5 +247,8 @@ span {
   }
   .articleImage {
     margin: auto;
+  }
+  .sortButton {
+    font-size: 0.7rem;
   }
 }
