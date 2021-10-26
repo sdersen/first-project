@@ -5,7 +5,7 @@ declare(strict_types=1);
 $movies =[
     [
         'id' => 1,
-        'titel' => 'Rouge One',
+        'title' => 'Rouge One',
         'year' => 2016,
         'image' => 'https://m.media-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_FMjpg_UX1000_.jpg',
         'descriptionShort' => 'In a time of conflict, a group of unlikely heroes band together on a mission to steal the plans to the Death Star, the Empire\'s ultimate weapon of destruction.',
@@ -13,7 +13,7 @@ $movies =[
     ],
     [
         'id' => 2,
-        'titel' => 'Star Wars',
+        'title' => 'Star Wars',
         'year' => 1977,
         'image' => 'https://cached-images.bonnier.news/swift/bilder/epi-30-dn/UploadedImages/2015/12/3/6a187580-f179-4dec-9e17-3d003bf9aafd/bigOriginal.jpg?interpolation=lanczos-none&downsize=480:*&output-quality=80&output-format=auto',
         'descriptionShort' => 'Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire\'s battle station, while also attempting to rescue Princess Leia from Darth Vader.',
@@ -21,7 +21,7 @@ $movies =[
     ],
     [
         'id' => 3,
-        'titel' => 'Retur of the Jedi',
+        'title' => 'Retur of the Jedi',
         'year' => 1983,
         'image' => 'https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg',
         'descriptionShort' => 'After a daring mission to rescue Han Solo from Jabba the Hutt, the Rebels dispatch to Endor to destroy the second Death Star. Meanwhile, Luke struggles to help Darth Vader back from the dark side without falling into the Emperor\'s trap.',
@@ -29,7 +29,7 @@ $movies =[
     ],
     [
         'id' => 4,
-        'titel' => 'Episode I: The Phantom Menace',
+        'title' => 'Episode I: The Phantom Menace',
         'year' => 1999,
         'image' => 'https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg',
         'descriptionShort' => 'Two Jedi escape a hostile blockade to find allies and come across a young boy who may bring balance to the Force, but the long dormant Sith resurface to claim their original glory.',
@@ -38,7 +38,7 @@ $movies =[
     ],
     [
         'id' => 5,
-        'titel' => 'Episode II: Attack of the Clones',
+        'title' => 'Episode II: Attack of the Clones',
         'year' => 2002,
         'image' => 'https://m.media-amazon.com/images/M/MV5BMDAzM2M0Y2UtZjRmZi00MzVlLTg4MjEtOTE3NzU5ZDVlMTU5XkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_.jpg',
         'descriptionShort' => 'Ten years after initially meeting, Anakin Skywalker shares a forbidden romance with Padmé Amidala, while Obi-Wan Kenobi investigates an assassination attempt on the senator.',
@@ -46,7 +46,7 @@ $movies =[
     ],
     [
         'id' => 6,
-        'titel' => 'The Empire Strikes Back',
+        'title' => 'The Empire Strikes Back',
         'year' => 1980,
         'image' => 'https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg',
         'descriptionShort' => 'After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued across the galaxy by Darth Vader.',

@@ -18,7 +18,7 @@ function isArtist0(array $charactersOrArtists): string
     if ($charactersOrArtists[0]['type'] === 'artist') {
         return 'yay';
     } else {
-        return 'No but it should be rigth?';
+        return 'No but it should be right?';
     };
 };
 
@@ -51,7 +51,7 @@ function isArtist2(array $charactersOrArtists):string
     if ($charactersOrArtists[2]['type'] === 'artist') {
         return 'Yes.';
     } else {
-        return 'No but it should be rigth?';
+        return 'No but it should be right?';
     };
 };
 

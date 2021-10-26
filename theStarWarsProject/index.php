@@ -46,7 +46,7 @@ if ($_GET['id'] == 1) {
             <a href="/article.php?id=<?= $movie['id'] ?>">
                 <article class="card">
                     <img class="cardImage" src=<?= $movie['image']; ?> alt="<?= $movie['title']; ?>" />
-                    <h3><?= $movie['titel']; ?> ( <?= $movie['year']; ?> )</h3>
+                    <h3><?= $movie['title']; ?> ( <?= $movie['year']; ?> )</h3>
                     <p class="cardDescription"><?= $movie['descriptionShort']; ?></p>
                 </article>
             </a>
