@@ -7,6 +7,7 @@
 }
 body {
   margin: 0;
+  margin-bottom: 60px;
   background-color: var(--blackish);
   font-family: 'Bitter', serif;
 }
@@ -137,7 +138,7 @@ h3 {
   padding: 1rem;
   border-radius: 15px;
 }
-.article:hover {
+.card:hover {
   border: var(--whiteish) solid 4px;
 }
 .cardImage {
@@ -159,7 +160,7 @@ h3 {
 .articleImage {
   width: 300px;
   object-fit: contain;
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 3rem;
 }
 .textContainer {
   margin: 3rem;
