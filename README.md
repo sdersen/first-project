@@ -3,7 +3,7 @@
 
 # My Starry Wars
 
-A page about some Star Wars films. It also includes a game and a function that will give you info on who you can dress up as on your next Star Wars costume party. You can view the page at [sofiadersen.com/starrywars](sofiadersen.com/starrywars)
+A page about some Star Wars films. It also includes a game and a function that will give you info on who you can dress up as on your next Star Wars costume party. You can view the page at [sofiadersen.com/starrywars](http://sofiadersen.com/starrywars).
 
 # Installation
 
