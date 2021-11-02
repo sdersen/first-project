@@ -55,9 +55,9 @@ $movies =[
 ];
 
 $menu = [
-    ['Home' => '/starrywars/index.php'],
-    ['About' => '/starrywars/about.php'],
-    ['Get character' => '/starrywars/getCharacter.php'],
+    ['Home' => '/index.php'],
+    ['About' => '/about.php'],
+    ['Get character' => '/getCharacter.php'],
 ];
 
 $characters = [
